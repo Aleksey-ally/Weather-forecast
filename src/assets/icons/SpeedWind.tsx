@@ -1,4 +1,4 @@
-import React, {memo, SVGProps} from 'react'
+import {memo, SVGProps} from 'react'
 
 export const SpeedWind = memo((props: SVGProps<SVGSVGElement>) => (
     <svg

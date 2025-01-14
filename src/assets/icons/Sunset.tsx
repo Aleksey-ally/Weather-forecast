@@ -1,4 +1,4 @@
-import React, {memo, SVGProps} from 'react'
+import {memo, SVGProps} from 'react'
 
 export const Sunset = memo((props: SVGProps<SVGSVGElement>) => (
     <svg
