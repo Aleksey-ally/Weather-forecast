@@ -1,13 +1,12 @@
 .card {
-
+  //width: 200px;
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), #1e3a8a);
-
-  border-radius: var(--border-radius-box);
+  border-radius: 15px;
   padding: 20px;
-  color: var(--color-light-100);
   position: relative;
   background-size: 200% 200%;
   animation: gradientAnimation 5s ease infinite;
+
   @keyframes gradientAnimation {
     0% {
       background-position: 0 50%;
@@ -57,20 +56,19 @@
       border-radius: 20px;
       text-align: center;
       outline: none;
-      color: var(--color-main);
-      font-weight: var(--font-weight-semi-bold);
     }
 
     .cardWeather {
       display: flex;
       justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
       gap: 3.5rem;
 
       .cardTemperatureWrapper {
         margin-right: -1.5em;
         .cardTemperature {
           font-size: 8em;
-          font-weight: var(--font-weight-bold);
 
           .celsius {
             margin-left: -.05em;
@@ -86,6 +84,10 @@
           flex-direction: column;
           text-align: center;
           margin-right: 1rem;
+          p{
+            margin: 0;
+            padding: 0;
+          }
 
           .city {
             font-size:3.25em;
@@ -142,10 +144,6 @@
 .forecastWrapper {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-main);
-  .forecastHeader{
-    color:var(--color-light-100);
-  }
   .forecast{
     display: flex;
     flex-wrap: wrap;

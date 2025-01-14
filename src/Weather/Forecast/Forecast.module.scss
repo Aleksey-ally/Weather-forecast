@@ -10,7 +10,6 @@
   border-radius: 15px;
   padding: 20px;
   height: 21.25rem;
-  color: var(--color-light-100);
   text-align: center;
 
   @keyframes gradientAnimation {
@@ -28,7 +27,6 @@
   .dayTemperatureWrapper {
     .day {
       font-size: 18px;
-      font-weight: var(--font-weight-bold);
     }
 
     .temperature {
