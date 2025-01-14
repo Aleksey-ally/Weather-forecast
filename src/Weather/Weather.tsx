@@ -7,6 +7,7 @@ import {Humidity, SpeedWind, Sunrise, Sunset} from "@/assets/icons";
 import {Forecast} from "./Forecast";
 import {Preloader} from "@/components/Preloader";
 import {useTranslation} from "react-i18next";
+import {LanguageSwitcher} from "@/components/LanguageSwitcher/LanguageSwitcher.tsx";
 
 export const Weather = () => {
     const [isFetching, setIsFetching] = useState<boolean>(false);
@@ -44,7 +45,7 @@ export const Weather = () => {
 
     useEffect(() => {
         fetchWeatherData(city);
-    }, [city]);
+    }, [city, i18n.language]);
 
     const handleSearch = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -71,6 +72,9 @@ export const Weather = () => {
             <div className={s.card}>
                 <div className={s.cardLogo}>
                     <img src={weatherLogo} alt="weather-logo"/>
+                </div>
+                <div className={s.langs}>
+                    <LanguageSwitcher/>
                 </div>
 
                 <div className={s.wrapper}>
@@ -150,7 +154,7 @@ export const Weather = () => {
             {forecast.length > 0 && city && forecast && (
 
                 <div className={s.forecastWrapper}>
-                    <h2 className={s.forecastHeader}>{t("weatherPage.header")}</h2>
+                    <h2>{t("weatherPage.header")}</h2>
                     <div className={s.forecast}>
                         {forecast.map((day, index) => (
 
@@ -168,8 +172,6 @@ export const Weather = () => {
                         ))}
                     </div>
                 </div>
-
-
             )}
         </>
     );
