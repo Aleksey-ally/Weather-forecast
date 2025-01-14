@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(115deg, #0f172a, #1e3a8a);
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), #1e3a8a);
   position: relative;
   background-size: 200% 200%;
   animation: gradientAnimation 5s ease infinite;

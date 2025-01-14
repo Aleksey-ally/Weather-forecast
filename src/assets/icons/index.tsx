@@ -1,4 +1,3 @@
-export * from './Send'
 export * from './SpeedWind'
 export * from './Humidity'
 export * from './Sunset'

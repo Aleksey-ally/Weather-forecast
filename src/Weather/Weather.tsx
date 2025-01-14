@@ -51,7 +51,7 @@ export const Weather = () => {
         fetchWeatherData(searchInput);
     };
 
-    if (!isFetching) return <Preloader/>;
+    if (isFetching) return <Preloader/>;
 
     const dayOptions: Intl.DateTimeFormatOptions = {
         weekday: 'long',

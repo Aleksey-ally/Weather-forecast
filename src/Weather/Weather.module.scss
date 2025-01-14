@@ -1,5 +1,7 @@
 .card {
-  background: linear-gradient(115deg, #0f172a, #1e3a8a);
+
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), #1e3a8a);
+
   border-radius: var(--border-radius-box);
   padding: 20px;
   color: var(--color-light-100);
