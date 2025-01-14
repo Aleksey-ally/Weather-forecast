@@ -1,0 +1,9 @@
+{
+  "weatherPage": {
+    "placeholder": "Enter city name",
+    "m/s": "m/s",
+    "max": "Max",
+    "min": "Min",
+    "header": "5 day forecast"
+  }
+}
